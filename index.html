@@ -37,7 +37,7 @@
                 .then(data => {
                     const populationData = data.data.map(item => ({
                         year: item.Year,
-                        population: item.Population
+                        population: item.Population.toLocaleString()
                     }));
 
                     const tableBody = document.getElementById('population-data');
